@@ -139,7 +139,3 @@ console.log('End script.')
 Without the **observeOn** applied in the middle of the pipe in the example above, the output would have **all been synchronous**, logging the doubled values **among** the non-doubled values, instead of tossing all of the second taps\(\)'s onto the **async task queue.**
 {% endhint %}
 
-## 
-
-## 
-
