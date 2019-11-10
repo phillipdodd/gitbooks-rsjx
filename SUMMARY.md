@@ -14,3 +14,7 @@
 * [Operators](docs/operators.md)
 * [Subjects](docs/subjects.md)
 
+## Resources
+
+* [Cold vs Hot Observables](resources/cold-vs-hot-observables.md)
+
