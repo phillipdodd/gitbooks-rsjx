@@ -9,12 +9,14 @@
 
 ## Docs
 
-* [Observable](docs/observable.md)
+* [Observables](docs/observable.md)
 * [Observers](docs/observers.md)
 * [Operators](docs/operators.md)
 * [Subjects](docs/subjects.md)
+* [Schedulers](docs/schedulers.md)
 
-## Resources
+## Additional Notes
 
-* [Cold vs Hot Observables](resources/cold-vs-hot-observables.md)
+* [Javascript Event Loop](additional-notes/javascript-event-loop.md)
+* [Cold vs Hot Observables](additional-notes/cold-vs-hot-observables.md)
 
