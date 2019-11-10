@@ -11,5 +11,6 @@
 
 * [Observable](docs/observable.md)
 * [Observers](docs/observers.md)
-* [Operators](operators.md)
+* [Operators](docs/operators.md)
+* [Subjects](docs/subjects.md)
 
