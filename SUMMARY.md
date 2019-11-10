@@ -3,10 +3,6 @@
 * [General](README.md)
 * [Conventions](conventions.md)
 
-## RxJs
-
-* [tap](rxjs/tap.md)
-
 ## Docs
 
 * [Observables](docs/observable.md)
