@@ -5,7 +5,7 @@
 An **Observable** is a representation of any set of values over a any set of time.
 
 {% hint style="danger" %}
-An **Observable** is **not** **executed** until an object **subscribes** to it.
+An **Observable** is **not** **executed** until an object **subscribes** to it. **Each** call to subscribe triggers an **independent execution** for a particular observer.
 {% endhint %}
 
 ## Common ways to Create Observables

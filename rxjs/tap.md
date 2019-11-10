@@ -8,8 +8,8 @@
 
 First encountered this in the [Angular "Tour of Heroes" tutorial](https://angular.io/tutorial) as the first argument of an [Observable](https://rxjs-dev.firebaseapp.com/guide/observable)'s [pipe ](https://rxjs-dev.firebaseapp.com/api/index/function/pipe)method before [catchError](https://rxjs-dev.firebaseapp.com/api/operators/catchError).
 
-{% code-tabs %}
-{% code-tabs-item title="hero.service.ts" %}
+{% tabs %}
+{% tab title="hero.service.ts" %}
 ```typescript
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
@@ -60,6 +60,6 @@ export class HeroService {
 }
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
