@@ -12,9 +12,9 @@ An **Observable** is **not** **executed** until an object **subscribes** to it. 
 
 ### Observable Constructor
 
-The **first argument** of an **Observable** is a **function** that will be passed the **argument** of the **subscriber.** 
+An **Observable's constructor** will want a **function** that tells it **with what to** _**do**_ with the **subscriber** that it creates. 
 
-That is, the **Observable** will want a **function** that tells it **with what to** _**do**_ with the **subscriber**.
+After which the Observable's [**subscribe** **function**](https://rxjs-dev.firebaseapp.com/api/index/class/Observable) will need to be called to **create a** [**Subscriber**](https://rxjs-dev.firebaseapp.com/api/index/class/Subscriber#constructor) and begin executing the Observable.
 
 The **subscribe** function \(Line 11 below\) takes as its first argument a **function defining subscriber.next\(\)**. 
 
@@ -36,17 +36,19 @@ allBooksObservable$.subscribe(book => console.log(book.title));
 **Further documentation** can be found here about **Line 11** in the example above, the [**Subscriber object's constructor**](https://rxjs-dev.firebaseapp.com/api/index/class/Subscriber#constructor)\*\*\*\*
 {% endhint %}
 
-There are **three methods** on the **subscriber interface:** 
+The **subscriber** implements the **Observer's** **interface,** giving access to the three functions: 
 
 1. `next()`
 2. `error()`
 3. `complete()`
 
+\(In addition to an **optional `closed` boolean**\)
+
 {% hint style="warning" %}
 **No new values** will be produced by the **Observable** once `error()` or `complete()` are called.
 {% endhint %}
 
-**error\(\)** takes a string and is for reporting an error message, and **complete\(\)** indicates when the process is complete. To define all three, the example above could also be written as:
+**next\(\)** produces a value, **error\(\)** takes a string and is for reporting an error message, and **complete\(\)** indicates when the process is complete. To define all three, the example above could also be written as:
 
 ```typescript
 let allBooksObservable$ = new Observable(subscriber => {
